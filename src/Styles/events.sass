@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:wght@100&family=Roboto:wght@300&display=swap')
+    
+.events-wrapper
+    width: 100%
+    height: 100%
+    overflow: 
+    padding: 0
+    margin: 0
+    .genre-wrapper
+        width: 100%
+        height: 100%
+        overflow: 
+        padding: 0
+        margin: 0
+        .genre-wrapper-bg
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            height: 100%
+            overflow: hidden
+            background-attachment: fixed
+            background-repeat: no-repeat
+            background-size: cover
+            z-index: 1
+        .genre-wrapper-stall
+            position: fixed
+            top: 0
+            z-index: 2
+
+        .events-stall-banner
+            position: fixed
+            top: 0
+            z-index: 3
+            width: 100%
+
+        #events-stall-banner-left
+            width: 13.54%
+            left: 12.5%
+            top: 22%
+            animation-name: move-stall-banner-left
+            animation-delay: 2s
+            animation-duration: 2s
+            animation-fill-mode: forwards
+
+        #events-stall-banner
+            width: 9.89%
+            left: 37.5%
+            top: 25%
+            animation-name: zoom-events-stall-banner
+            animation-delay: 2s
+            animation-duration: 2s
+            animation-fill-mode: forwards
+
+        #events-stall-banner-right
+            width: 17.7%
+            left: 72.39%
+            top: 22%
+            animation-name: move-stall-banner-right
+            animation-delay: 2s
+            animation-duration: 2s
+            animation-fill-mode: forwards
+
+        #events-stall-left
+            width: 30.2%
+            left: 10px
+            animation-name: move-stall-left
+            animation-delay: 2s
+            animation-duration: 2s
+            animation-fill-mode: forwards
+        #events-stall-right
+            width: 40.625%
+            left: 59.375%
+            animation-name: move-stall-right
+            animation-delay: 2s
+            animation-duration: 2s
+            animation-fill-mode: forwards
+        #events-stall
+            width: 35.41%
+            left: 28%
+            animation-name: zoom-events-stall
+            animation-delay: 2s
+            animation-duration: 2s
+            animation-fill-mode: forwards
+
+        .genre-flags-wrapper
+            position: fixed
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            overflow: hidden
+            z-index: 4
+            .genre-flags
+                position: absolute
+                width: 97px
+                visibility: hidden
+                display: block
+                text-align: center
+                animation: flag-appear 2s ease-in-out
+                animation-delay: 4.8s
+                animation-fill-mode: forwards
+                transform: translate3d(23%, 17%, 0)
+                span
+                    display: block
+                    position: relative
+                    margin: 0 auto
+                    bottom: 100px
+                    color: white
+            #flag-1
+                left: 680px
+                top: 227px
+            #flag-2
+                top: 556px
+                left: 342px
+            #flag-3
+                top: 536px
+                left: 635px
+            #flag-4
+                top: 472px
+                left: 908px
+            #flag-5
+                top: 305px
+                left: 1159px
+            #flag-6
+                top: 382px
+                left: 637px
+            #flag-7
+                top: 550px
+                left: 502px
+            #flag-8
+                top: 510px
+                left: 770px
+            #flag-9
+                top: 412px
+                left: 1030px
+
+@keyframes flag-appear
+    0%
+        visibility: hidden
+        opacity: 0
+    100%
+        visibility: visible
+        opacity: 1
+
+@keyframes move-stall-left
+    0%
+        left: 0
+    100%
+        left: -112.5%
+
+@keyframes move-stall-banner-left
+    0%
+        left: 12.5%
+    100%
+        left: -100%
+
+@keyframes move-stall-right
+    0%
+        left: 59.375%
+    100%
+        left: 100%
+
+@keyframes move-stall-banner-right
+    0%
+        left: 72.39%
+    100%
+        left: 113%
+
+@keyframes zoom-events-stall
+    0%
+        transform: scale(1)
+        left: 28%
+        top: 0
+    100%
+        transform: scale(3)
+        left: 40%
+        top: 42%
+
+@keyframes zoom-events-stall-banner
+    0%
+        transform: scale(1)
+        left: 37.5%
+        top: 25%
+    100%
+        transform: scale(3)
+        left: 43%
+        top: 5%
+
+.customOverlay
+    background-color: rgba(0, 0, 0, 0.9)
+
+.customModal
+    width: calc(80% - 40px)
+    height: calc(100% - 70px)
+    position: fixed
+    left: 10%
+    top: 10%
+    max-width: 80%
+    margin: 0
+    padding: 20px
+    border-radius: 12px
+    overflow: hidden
+    background: transparent
+    padding-bottom: 50px
+    #events-close
+        font-size: 30px
+        color: white
+        position: absolute
+        top: 12px
+        right: 17px
+    .event-modal-wrapper
+        width: 100%
+        height: 100%
+        display: inline-flex
+        overflow: hidden
+        .event-modal-navbar
+            width: calc(30% - 20px)
+            height: 100%
+            display: block
+            background-color: transparent
+            overflow: hidden
+            color: black
+            padding-right: 20px
+        .event-modal-mainbar
+            width: 80%
+            height: 100%
+            display: block
+            overflow: auto
+            color: white
+            background-image: linear-gradient(147deg, rgba(0,0,0,.5),rgba(4,97,159,.2) 74%)
+            background-color: #000
+            border-radius: 12px
+            padding: 20px
+            h1
+                font-family: 'Oswald', sans-serif
+                line-height: 30px
+                margin: 20px
+            h2
+                font-family: 'Oswald', sans-serif
+                line-height: 20px
+                margin: 10px
+            .event-about
+                width: 100%
+                position: relative
+                left: 0%
+                margin-bottom: 5%
+                font-family: 'Raleway', sans-serif
+            .event-rules
+                width: 100%
+                position: relative
+                left: 0%
+                margin-bottom: 5%
+                font-family: 'Raleway', sans-serif
+            .event-register
+                width: 100%
+                margin-bottom: 30px
+                font-family: 'Raleway', sans-serif
+                .event-register-form-wrapper
+                    width: 90%
+                    position: relative
+                    top: 50px
+                    left: calc(5%)
+                    form
+                        text-align: center
+                    .dynamic-form
+                        width: 90%
+                        margin: 0 auto
+                    .form_error
+                        color: red
+                        font-size: 12px
+                        margin-top: 0px
+                        width: 340px
+                        display: inline-block
+                        text-align: right

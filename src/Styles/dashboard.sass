@@ -1,0 +1,185 @@
+.dashboard-wrapper
+    position: fixed
+    top: 5%
+    bottom: 5%
+    left: 10%
+    right: 10%
+    background-color: #21242E
+    font-family: Roboto,sans-serif
+    padding: 20px
+    color: white
+    border-radius: 30px
+    text-align: center
+    display: inline-flex
+    .dashboard-navbar
+        position: absolute
+        top: 0
+        left: 0
+        right: 80%
+        width: 18%
+        background-color: #161616
+        height: calc(100% - 33px)
+        border-radius: 30px 0px 0px 30px
+        padding: 15px
+        font-family: inherit
+        padding-top: 18px
+        .navitem-wrapper
+            width: 100%
+            position: relative
+            top: 150px
+            display: grid
+            .MuiButton-label
+                svg
+                    position: relative
+                    left: 10px
+                span
+                    position: relative
+                    left: 20px
+
+    .dashboard-mainbar
+        position: absolute
+        top: 0
+        bottom: 0
+        left: calc(18% + 30px)
+        right: calc(25% + 30px)
+        width: calc(57% - 90px)
+        height: calc(100% - 30px)
+        padding: 15px
+        background-color: transparent
+        border: none
+        margin: 0
+        outline: none
+        .mainpanel-wrapper
+            width: 100%
+            font-family: Roboto,sans-serif
+            overflow-y: auto
+            overflow-x: hidden
+            height: calc(100% - 60px)
+            .profile-table
+                width: 80%
+                position: relative
+                left: 10%
+                border: none
+                background-color: #121212
+                padding: 10px
+                border-radius: 12px 
+                tr
+                    height: 40px
+                    border-radius: 12px
+                    &:hover
+                        background-color: #242424
+            .complaint-wrapper
+                width: calc(90% - 20px)
+                background-color: #181818
+                border-radius: 12px
+                position: relative
+                left: 5%
+                padding: 10px
+                min-height: 100px
+                padding-bottom: 40px
+                margin-top: 30px
+                .dashboard-complaint-card
+                    width: 80%
+                    display: inline-flex
+                    border-radius: 4px
+                    border: 1px solid white
+                    padding: 10px
+                    button
+                        width: 100%
+                        border-radius: 4px
+                        border: 1px solid white
+                        color: white
+                        background-color: transparent
+                        padding: 10px
+                        margin: 0 auto
+                        position: relative
+                        top: 50%
+                        transform: translateY(-50%)
+                form
+                .form_error
+                    color: red
+                    font-size: 12px
+                    margin-top: 0px
+                    width: 340px
+                    display: inline-block
+                    text-align: right
+            .dashboard-regevent
+                min-width: 250px
+                min-height: 250px
+                border-radius: 12px
+                padding: 10px
+                font-family: inherit
+                background-color: #181818
+                .dashboard-regevent-list
+                    display: flex
+                    width: calc(98% - 12px)
+                    position: relative
+                    left: 1%
+                    margin-bottom: 0px
+                    border-radius: 4px
+                    background-color: transparent
+                    padding: 6px
+                    &:hover
+                        background-color: #242424
+                    span
+                        line-height: 30px
+                        text-align: left
+                        width: max-content
+                    button
+                        line-height: 30px
+                        border-radius: 4px
+                        border: none
+                        outline: none
+                        margin-left: auto
+                        background-color: #121212
+                        color: white
+                        font-family: inherit
+                        padding: 0px 10px
+                        height: 30px
+                        margin-bottom: 6px
+
+    .dashboard-eventbar
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        width: 25%
+        height: calc(100% - 30px)
+        padding: 15px
+        background-color: #121212
+        font-family: inherit
+        border-radius: 0 30px 30px 0px
+        text-align: center
+        i
+            font-size: 26px
+            position: absolute
+            right: 16px
+            top: 14px
+        .profilebar
+            width: 100%
+            position: relative
+            top: 30px
+            font-family: inherit
+            display: grid
+            .profilepic
+                width: 160px
+                height: 160px
+                border-radius: 85px
+                border: 5px solid white
+                margin: 10px auto
+            .name
+                width: 100%
+                text-align: center
+                fint-size: 20px
+                color: white
+                font-weight: bolder
+                font-family: inherit
+                margin-top: 7px
+            .email
+                width: 100%
+                text-align: center
+                font-size: 14px
+                color: rgba(255, 255, 255, 0.6)
+                font-family: inherit
+                font-weight: light
+                margin-top: 5px

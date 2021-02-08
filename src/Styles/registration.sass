@@ -1,0 +1,104 @@
+.regModal
+    position: relative
+    top: 0px
+    left: 0px
+    width: calc( 100% - 40px )
+    height: calc( 100% - 40px )
+    background-color: black
+    font-family: Roboto,sans-serif
+    color: white
+    text-align: center
+    padding: 20px
+    border-radius: 12px
+    #closeBtn
+        position: absolute
+        top: 10px
+        right: 16px
+        font-size: 24px
+        color: white
+        z-index: 3000
+    h1
+        text-align: center
+        margin: 0
+        max-height: 60px
+        font:
+            size: 3em
+            family: inherit
+    .password_toggle_icon
+        background-color: transparent
+        border: none
+        outline: none
+        color: white
+    .regModal_wrapper
+        display: inline-flex
+        width: 100%
+        height: calc(100% - 80px)
+        position: relative
+        top: 20px
+        overflow: hidden
+        h2
+            font-size: 2em
+        .reg_button
+            width: 340px
+            height: 60px
+            borderRadius: 30px
+            fontSize: 18px
+            fontFamily: 'Helvetica'
+            backgroundColor: rgba(63, 184, 232, 0.9)
+        .regModal_login
+            width: 50%
+            border-right: 1px solid white
+            .facebook_login, .kep-login-facebook
+                margin-top: 20px
+                width: 300px
+                border: none
+                height: 60px
+                background-color: #4C69BA
+                color: inherit
+                border-radius: 4px
+                font:
+                    family: inherit
+                    size: 1em
+                i
+                    margin-right: 20px
+            .google_login
+                width: 300px
+                border: none
+                height: 60px
+                color: grey
+                border-radius: 4px
+                font:
+                    family: inherit
+                    size: 1.2em
+                img
+                    margin-right: 20px
+                    position: relative
+                    top: 7px
+        .regModal_signup
+            width: 50%
+            overflow-y: auto
+            overflow-x: hidden
+            padding-bottom: 60px
+            .signup_error
+                color: red
+                font-size: 12px
+                margin-top: 0px
+                width: 340px
+                display: inline-block
+                text-align: right
+            .register-form-recaptcha
+                width: 100%
+                textAlign: center
+                margin: 0
+                display: inline-flex
+                justify-content: center
+                div
+                    overflow: hidden
+
+.signup_error
+    color: red !important
+    font-size: 12px
+    margin-top: 0px !important
+    width: 340px
+    display: inline-block
+    text-align: right    
